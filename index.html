@@ -7,186 +7,145 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
         }
         header {
-            background: url('background-image.jpg') no-repeat center center/cover;
+            background-color: #FFD700;
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 20px;
             text-align: center;
         }
-        header h1 {
-            font-size: 3em;
-        }
-        header h2 {
-            font-size: 1.5em;
-        }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        h1, h2, h3 {
+            color: #FFD700;
         }
         section {
-            margin-bottom: 40px;
+            padding: 20px;
+            background: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        section h3 {
-            color: #444;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+        .chart-container {
+            margin: 20px auto;
+            max-width: 800px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        table th {
-            background: #333;
-            color: #fff;
+        canvas {
+            display: block;
+            margin: 0 auto;
         }
         footer {
             text-align: center;
-            background: #444;
+            padding: 10px 20px;
+            background-color: #FFD700;
             color: #fff;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        .highlight {
-            color: #c7254e;
-            font-weight: bold;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
-        <h1>ABBA's Kingdom Donation Program</h1>
-        <h2>Empowering Generosity, Transforming Lives</h2>
-    </header>
 
-    <div class="container">
-        <section>
-            <h3>Mission</h3>
-            <p>
-                ABBA’s Kingdom Donation Program is a divine invitation to co-labor with God, redeeming Holy Spirit-led generosity through biblical sowing and reaping principles. This program is designed to revolutionize giving by combining faith with innovative affiliate systems, creating profound economic, social, and spiritual impact across global demographics.  
-                <strong>Ephesians 3:20-21:</strong> "Now to Him who is able to do immeasurably more than all we ask or imagine, according to His power that is at work within us..."
-            </p>
-        </section>
+<header>
+    <h1>ABBA's Kingdom Donation Program</h1>
+    <p>Empowering Generosity Through Holy Spirit-led Vision</p>
+</header>
 
-        <section>
-            <h3>Program Highlights</h3>
-            <ul>
-                <li><strong>Generosity Amplified:</strong> Transforming lives through divine sowing and reaping principles.</li>
-                <li><strong>Donor-to-Affiliate Ripple Effect:</strong> Donors invited to become affiliates, exponentially growing impact.</li>
-                <li><strong>Blue Ocean Strategy:</strong> A revolutionary program disrupting traditional donation models.</li>
-                <li><strong>Phase-by-Phase Scalability:</strong> Strategic, data-driven expansion ensures sustainable growth.</li>
-            </ul>
-        </section>
+<section>
+    <h2>Introduction</h2>
+    <p>ABBA’s Kingdom Donation Program is a revolutionary initiative designed to restore Holy Spirit generosity through biblical principles of sowing and reaping. Rooted in John 10:10 and Ephesians 3:20-21, the program embodies the abundant life promised by Jesus while delivering tangible impact across multiple demographics. This program operates on a two-tier structure: <strong>Main Link Donations</strong> and <strong>Affiliate Partnerships</strong>, both designed to maximize Kingdom impact while empowering individuals and communities globally.</p>
+</section>
 
-        <section>
-            <h3>Phase-by-Phase Breakdown</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Phase</th>
-                        <th>Donors</th>
-                        <th>Total Donations</th>
-                        <th>NLC Kingdom (58%)</th>
-                        <th>Co-Creator (42%)</th>
-                        <th>Affiliate Conversion</th>
-                        <th>Affiliate Earnings</th>
-                        <th>Kingdom Impact (NLC, 9%)</th>
-                        <th>Co-Creator Impact (1%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Phase 1 (30 Days)</td>
-                        <td>1,000</td>
-                        <td>$1,222,000</td>
-                        <td>$708,760</td>
-                        <td>$513,240</td>
-                        <td>400</td>
-                        <td>$439,920</td>
-                        <td>$43,992</td>
-                        <td>$4,880</td>
-                    </tr>
-                    <tr>
-                        <td>Phase 2 (Months 2-12)</td>
-                        <td>125,000</td>
-                        <td>$152,750,000</td>
-                        <td>$88,595,000</td>
-                        <td>$64,155,000</td>
-                        <td>62,500</td>
-                        <td>$137,475,000</td>
-                        <td>$13,747,500</td>
-                        <td>$1,374,750</td>
-                    </tr>
-                    <tr>
-                        <td>Phase 3 (Year 2)</td>
-                        <td>1,250,000</td>
-                        <td>$1,527,500,000</td>
-                        <td>$885,950,000</td>
-                        <td>$641,550,000</td>
-                        <td>750,000</td>
-                        <td>$1,374,750,000</td>
-                        <td>$137,475,000</td>
-                        <td>$13,747,500</td>
-                    </tr>
-                    <tr>
-                        <td>Phase 4 (Year 3-5)</td>
-                        <td>4,250,000</td>
-                        <td>$5,191,750,000</td>
-                        <td>$3,010,215,000</td>
-                        <td>$2,181,535,000</td>
-                        <td>2,975,000</td>
-                        <td>$4,672,575,000</td>
-                        <td>$467,257,500</td>
-                        <td>$51,975,000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+<section>
+    <h2>Phase-by-Phase Growth and Financial Analysis</h2>
+    <h3>Phase 1: Foundation (First 30 Days)</h3>
+    <p><strong>Goal:</strong> 1,000 donors contributing a one-time $1,222 donation. This phase establishes the foundation for the program.</p>
+    <p><strong>Total Donations:</strong> $1,222,000</p>
+    <p><strong>Distribution:</strong> 58% ($708,760) supports NLC Kingdom projects, and 42% ($513,240) goes toward Co-Creator initiatives.</p>
+    <p><strong>Affiliate Impact:</strong> 400 affiliates generate $439,920 in earnings, empowering them to impact families and communities.</p>
 
-        <section>
-            <h3>Demographic and Market Analytics</h3>
-            <p>
-                <strong>Target Demographics:</strong>
-                <ul>
-                    <li><strong>Affiliate Market:</strong> 95 million individuals actively seeking passive income opportunities.</li>
-                    <li><strong>Youth Engagement:</strong> 600 million global high school students (ages 13-18).</li>
-                    <li><strong>Faith-Based Giving:</strong> 2.5 billion Christians globally aligned with the program’s mission.</li>
-                </ul>
-            </p>
-        </section>
+    <h3>Phase 2: Expansion (Months 2-12)</h3>
+    <p><strong>Goal:</strong> Scale to 125,000 donors, resulting in $152,750,000 in total donations.</p>
+    <p><strong>Distribution:</strong> 58% ($88,595,000) for NLC Kingdom and 42% ($64,155,000) for Co-Creator.</p>
+    <p><strong>Affiliate Impact:</strong> 62,500 affiliates generate $137,475,000 in earnings, further multiplying the program’s global reach.</p>
 
-        <section>
-            <h3>Ongoing Updates and Longevity</h3>
-            <p>
-                ABBA’s Kingdom Donation Program employs continuous data analysis and updates to adapt to market changes, maximize longevity, and maintain a competitive edge. Regular adjustments ensure that all performance targets are met or exceeded while honoring the mission of generosity through Christ.
-            </p>
-        </section>
+    <h3>Phase 3: Acceleration (Year 2)</h3>
+    <p><strong>Goal:</strong> Reach 1,250,000 donors, resulting in $1,527,500,000 in donations.</p>
+    <p><strong>Distribution:</strong> 58% ($885,950,000) for NLC Kingdom and 42% ($641,550,000) for Co-Creator.</p>
+    <p><strong>Affiliate Ripple Effect:</strong> 750,000 affiliates contribute $1,374,750,000 in earnings.</p>
+
+    <h3>Phase 4: Transformation (Years 3-5)</h3>
+    <p><strong>Goal:</strong> Expand to 4,250,000 donors globally, resulting in $5,191,750,000 in total donations.</p>
+    <p><strong>Distribution:</strong> 58% ($3,010,215,000) for NLC Kingdom and 42% ($2,181,535,000) for Co-Creator.</p>
+    <p><strong>Affiliate Ripple Effect:</strong> 2,975,000 affiliates generate $4,672,575,000, fostering a global movement of Holy Spirit generosity.</p>
+</section>
+
+<section>
+    <h2>Demographic Analysis</h2>
+    <p>Target demographics include:</p>
+    <ul>
+        <li><strong>Affiliate/Side Hustle Market:</strong> Over 95 million individuals globally seeking passive income opportunities.</li>
+        <li><strong>High School Students (13-18 years):</strong> Over 600 million youth worldwide represent a critical demographic for inspiring Holy Spirit-led purpose.</li>
+        <li><strong>Faith Communities:</strong> 2.5 billion Christians globally with potential to sow into Kingdom purposes.</li>
+        <li><strong>Families and Businesses:</strong> Focused on breaking generational poverty and fostering Kingdom-minded stewardship.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projected Growth Chart</h2>
+    <div class="chart-container">
+        <canvas id="growthChart"></canvas>
     </div>
-      <footer>
-                      <p>&copy; 2024 ABBA's Kingdom Donation Program. All Rights Reserved.</p>
-    </footer>
+</section>
 
-    <footer>
-        <p>
-            <strong>"All things are possible for those who believe" (Mark 9:23).</strong><br>
-            Join us in this divine movement to redeem generosity and transform lives globally.
-        </p>
-    </footer>
+<footer>
+    <p>“All things are possible for those who believe.” (Mark 9:23)</p>
+    <p>&copy; 2024 ABBA's Kingdom Donation Program. All rights reserved.</p>
+</footer>
+
+<script>
+    const ctx = document.getElementById('growthChart').getContext('2d');
+    const growthChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
+            datasets: [{
+                label: 'Total Donations ($)',
+                data: [1222000, 152750000, 1527500000, 5191750000],
+                backgroundColor: 'rgba(255, 215, 0, 0.2)',
+                borderColor: 'rgba(255, 215, 0, 1)',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return '$' + context.raw.toLocaleString();
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return '$' + value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
-
