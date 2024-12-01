@@ -1,170 +1,214 @@
+# Let's start crafting the HTML framework for this presentation.
+# This will include placeholders for interactive charts, dynamic demographic breakdowns, and a clear, professional structure.
+
+html_page = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABBA's Kingdom Donation Program - Data Analysis</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    h1, h2, h3, h4 {
-      text-align: center;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    canvas {
-      margin-top: 30px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Vision Program</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px 10%;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .impact-graph {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .content-box {
+            margin-bottom: 20px;
+        }
+        .collapsible {
+            background-color: #6a11cb;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 1.2em;
+        }
+        .collapsible:hover {
+            background-color: #2575fc;
+        }
+        .content {
+            padding: 10px 20px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-  <h1>ABBA's Kingdom Donation Program</h1>
-  <h2>Revealing His Kingdom on Earth as It Is in Heaven</h2>
-  
-  <div class="container">
-    <div class="section">
-      <h3>Program Overview</h3>
-      <p>
-        ABBA's Kingdom Donation Program is a revolutionary platform designed to inspire generosity,
-        empower communities, and advance the mission of God's Kingdom on Earth. It combines cutting-edge
-        technology with biblical principles, offering unparalleled opportunities for donors and affiliates
-        alike.
-      </p>
-    </div>
+    <header>
+        <h1>Abba's Kingdom Vision Program</h1>
+        <p>"On earth as it is in Heaven" - A Revelation of Generosity</p>
+    </header>
 
-    <div class="section">
-      <h3>Phase Implementation and Projections</h3>
-      <p>Our 4-phase plan ensures sustained growth and impact:</p>
-      <ul>
-        <li><strong>Phase 1 (0-6 Months):</strong> Engage 37,000 donors through SEO, affiliates, and organic reach.</li>
-        <li><strong>Phase 2 (6-18 Months):</strong> Scale to 100,000 donors through strategic partnerships and viral marketing.</li>
-        <li><strong>Phase 3 (18-36 Months):</strong> Reach 300,000 donors by expanding demographics and global outreach.</li>
-        <li><strong>Phase 4 (36-84 Months):</strong> Achieve 1,000,000 donors, with a 17% penetration of target demographics.</li>
-      </ul>
-      <p><strong>Probability of Success:</strong> Based on market data and program design, there is an 85%+ probability of achieving these milestones.</p>
-    </div>
+    <section>
+        <div class="section-title">Introduction</div>
+        <div class="content-box">
+            <p>
+                This program represents Abba's Kingdom come, designed to manifest His generosity and provision. 
+                Rooted in biblical principles of sowing and reaping, it invites everyone to partake in the blessings of Heaven's storehouses. 
+                By addressing both spiritual and physical needs, this initiative empowers communities, restores families, 
+                and ignites the faith of generations.
+            </p>
+        </div>
+    </section>
 
-    <div class="section">
-      <h3>Comparative Analysis</h3>
-      <p>
-        When compared to competitors like GoFundMe, Patreon, and Tithe.ly, ABBA's Kingdom Donation Program offers:
-        <ul>
-          <li><strong>Higher Donor ROI:</strong> 90% reaped by donors, fostering trust and participation.</li>
-          <li><strong>Faith-Based Focus:</strong> A unique mission to advance the Kingdom of God.</li>
-          <li><strong>Scalability:</strong> Cutting-edge SEO bots and affiliate tools ensure exponential growth.</li>
-        </ul>
-      </p>
-    </div>
+    <section>
+        <div class="section-title">Demographic Breakdown & Impact</div>
+        <button type="button" class="collapsible">Faith-Based Demographics</button>
+        <div class="content">
+            <p>
+                <b>Active Christians:</b> 180 million globally, with an estimated 10% initial reach potential.<br>
+                <b>Youth Leaders:</b> 35 million globally, mobilizing the next generation.<br>
+                <b>Retirees:</b> 50 million globally, bringing resources and wisdom.<br>
+            </p>
+        </div>
+        <button type="button" class="collapsible">Entrepreneurial/Passive-Income Seekers</button>
+        <div class="content">
+            <p>
+                <b>Work-from-Home Market:</b> 85 million individuals seeking financial freedom.<br>
+                <b>Affiliate Marketers:</b> 20 million globally, a high-growth market.<br>
+                <b>Visionary Entrepreneurs:</b> An untapped opportunity for alignment with Kingdom values.
+            </p>
+        </div>
+    </section>
 
-    <div class="section">
-      <h3>Impact of 1 Million Donors</h3>
-      <p>With 1 million donors, the financial and social impact includes:</p>
-      <ul>
-        <li><strong>Donors:</strong> $1.1 billion directly reaped by donors via affiliate links (90%).</li>
-        <li><strong>Kingdom Vision:</strong> $110 million funds Kingdom missions, community restoration, and outreach.</li>
-        <li><strong>Co-Creator:</strong> $12.2 million for ongoing stewardship and program growth.</li>
-      </ul>
-      <p>The program reflects the abundance of God's Kingdom, meeting both spiritual and physical needs worldwide.</p>
-    </div>
+    <section>
+        <div class="section-title">Projected Impact</div>
+        <div class="impact-graph">
+            <canvas id="impactChart" width="800" height="400"></canvas>
+        </div>
+    </section>
 
-    <canvas id="donorChart"></canvas>
-  </div>
+    <section>
+        <div class="section-title">Call to Action</div>
+        <p>
+            Be a part of this divine mission. Step into your role as a steward of Heaven's resources and witness His glory manifest in tangible ways. 
+            Together, we will see families restored, communities uplifted, and the Kingdom revealed in its fullness.
+        </p>
+    </section>
 
-  <script>
-    const ctx = document.getElementById('donorChart').getContext('2d');
-    const donorChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
-        datasets: [
-          {
-            label: "ABBA's Kingdom Program",
-            data: [37000, 100000, 300000, 600000, 1000000],
-            borderColor: 'rgba(75, 192, 192, 1)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            fill: true,
-            tension: 0.3,
-          },
-          {
-            label: 'GoFundMe',
-            data: [15000, 40000, 70000, 100000, 150000],
-            borderColor: 'rgba(255, 99, 132, 1)',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            fill: true,
-            tension: 0.3,
-          },
-          {
-            label: 'Patreon',
-            data: [20000, 60000, 120000, 200000, 300000],
-            borderColor: 'rgba(54, 162, 235, 1)',
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            fill: true,
-            tension: 0.3,
-          },
-          {
-            label: 'Tithe.ly',
-            data: [10000, 30000, 60000, 90000, 150000],
-            borderColor: 'rgba(255, 206, 86, 1)',
-            backgroundColor: 'rgba(255, 206, 86, 0.2)',
-            fill: true,
-            tension: 0.3,
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top',
-          },
-          tooltip: {
-            callbacks: {
-              label: function(context) {
-                const impact = context.raw * 1222;
-                return `${context.dataset.label}: ${context.raw.toLocaleString()} donors ($${impact.toLocaleString()})`;
-              }
-            }
-          }
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Years'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Number of Donors'
+    <footer>
+        &copy; 2024 Abba's Kingdom Vision Program | All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Graph for projected impact
+        const ctx = document.getElementById('impactChart').getContext('2d');
+        const impactChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+                datasets: [
+                    {
+                        label: 'Program Impact ($M)',
+                        data: [500, 1200, 2500, 4000, 6000],
+                        borderColor: '#6a11cb',
+                        backgroundColor: 'rgba(106, 17, 203, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Competitors ($M)',
+                        data: [300, 700, 1200, 1800, 2500],
+                        borderColor: '#2575fc',
+                        backgroundColor: 'rgba(37, 117, 252, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
             },
-            ticks: {
-              callback: function(value) {
-                return value.toLocaleString();
-              }
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Years'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Impact in Millions ($)'
+                        },
+                        beginAtZero: true
+                    }
+                }
             }
-          }
-        }
-      }
-    });
-  </script>
+        });
+
+        // Collapsible sections
+        const collapsibles = document.querySelectorAll('.collapsible');
+        collapsibles.forEach(btn => {
+            btn.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+"""
+
+# Save the HTML file
+output_path = "/mnt/data/Kingdom_Vision_Program.html"
+with open(output_path, "w") as file:
+    file.write(html_page)
+
+output_path
+
