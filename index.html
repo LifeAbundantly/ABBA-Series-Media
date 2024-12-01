@@ -3,210 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ABBA's Kingdom Donation Program - Empowering communities, restoring families, and advancing faith through generosity and sustainable impact.">
-  <meta name="author" content="ABBA's Kingdom Donation Program">
-  <meta name="keywords" content="Generosity, Faith, Community, Donation Program, Kingdom of God, Affiliate Program">
-  <title>ABBA's Kingdom Donation Program - Competitive and Impact Analysis</title>
+  <title>ABBA's Kingdom Donation Program Analysis</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    /* General Styles */
     body {
-      font-family: 'Roboto', Arial, sans-serif;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 0;
-    }
-    section {
       padding: 20px;
-      max-width: 1200px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
       margin: 0 auto;
     }
-    section h2 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #333;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+    canvas {
+      margin-top: 20px;
     }
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .comparison-table th, .comparison-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-    }
-    .comparison-table th {
-      background-color: #6a11cb;
-      color: white;
-    }
-    .comparison-table td:nth-child(1) {
-      font-weight: bold;
-      background-color: #f5f5f5;
-    }
-    .chart-container {
-      width: 90%;
-      margin: 30px auto;
+    .details {
       background: white;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-    footer a {
-      color: #6a11cb;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ABBA's Kingdom Donation Program</h1>
-    <p>“Your Kingdom come, Your will be done, on earth as it is in Heaven.”</p>
-  </header>
-  
-  <section>
-    <h2>Vision and Purpose</h2>
-    <p>
-      ABBA's Kingdom Donation Program is more than a platform—it’s a Kingdom-driven movement to empower individuals and restore communities through generosity. By uniting spiritual and physical impact, this program mirrors Jesus' multiplication miracles and the Spirit of generosity. 
-    </p>
-    <p>
-      This initiative ensures that every donation, every affiliate action, and every tool is purposed to make the generosity of Heaven known on Earth.
-    </p>
-  </section>
-
-  <section>
-    <h2>Competitive Analysis</h2>
-    <p>
-      Below, we compare ABBA's Kingdom Donation Program to other platforms such as **GoFundMe** (crowdfunding), **Patreon** (membership-based), and **Tithe.ly** (church-focused giving). 
-      The data is sourced from publicly available metrics, affiliate marketing reports, and donor behavior studies.
-    </p>
-    <table class="comparison-table">
-      <tr>
-        <th>Category</th>
-        <th>ABBA's Kingdom Donation Program</th>
-        <th>GoFundMe</th>
-        <th>Patreon</th>
-        <th>Tithe.ly</th>
-      </tr>
-      <tr>
-        <td>Demographic Reach</td>
-        <td>Global; All ages, faiths</td>
-        <td>Project-based campaigns</td>
-        <td>Artists and entrepreneurs</td>
-        <td>Church-focused only</td>
-      </tr>
-      <tr>
-        <td>Key Feature</td>
-        <td>SEO-driven affiliate scalability</td>
-        <td>Crowdfunding</td>
-        <td>Recurring memberships</td>
-        <td>Donation processing for churches</td>
-      </tr>
-      <tr>
-        <td>Year 1 Donor Impact</td>
-        <td>370,000 donors</td>
-        <td>200,000 donors</td>
-        <td>150,000 donors</td>
-        <td>100,000 donors</td>
-      </tr>
-      <tr>
-        <td>Projected Growth (5 Years)</td>
-        <td>2.5M+ donors</td>
-        <td>1M donors</td>
-        <td>800K donors</td>
-        <td>600K donors</td>
-      </tr>
-      <tr>
-        <td>Community Restoration</td>
-        <td>High (spiritual and economic)</td>
-        <td>Moderate</td>
-        <td>Low</td>
-        <td>Moderate</td>
-      </tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>5-Year Projections</h2>
-    <p>
-      This graph compares donor growth over 5 years, highlighting the exponential impact of ABBA's Kingdom Donation Program versus its competitors.
-    </p>
-    <div class="chart-container">
-      <canvas id="projectionChart"></canvas>
+  <h1>ABBA's Kingdom Donation Program</h1>
+  <h2>Comparative Data Analysis and Growth Projection</h2>
+  <div class="container">
+    <canvas id="donorChart"></canvas>
+    <div class="details">
+      <h3>Program Overview</h3>
+      <p>ABBA's Kingdom Donation Program is a revolutionary giving platform inspired by the Spirit of generosity. It combines affiliate marketing, community impact, and scalability unmatched by current competitors.</p>
+      <h3>Competitive Analysis</h3>
+      <p>The program stands apart from platforms like <strong>GoFundMe</strong>, <strong>Patreon</strong>, and <strong>Tithe.ly</strong> by offering:
+        <ul>
+          <li>A scalable affiliate system where 90% of donations directly benefit the referrer, fostering participation.</li>
+          <li>Community-centric giving focused on faith, family restoration, and economic freedom.</li>
+          <li>Advanced SEO strategies ensuring the program reaches global markets at an unparalleled rate.</li>
+        </ul>
+      </p>
+      <h3>Projected 5-Year Impact</h3>
+      <p>The program has the potential to transform lives through its Kingdom-focused mission:
+        <ul>
+          <li><strong>Community Impact:</strong> Supporting grassroots initiatives and restoring faith-driven networks.</li>
+          <li><strong>Economic Impact:</strong> Generating passive income for affiliates while addressing global poverty.</li>
+          <li><strong>Faith Impact:</strong> Spreading the gospel and inviting individuals to experience God's generosity.</li>
+        </ul>
+      </p>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 ABBA's Kingdom Donation Program | <a href="#">Contact Us</a></p>
-  </footer>
-
+  </div>
   <script>
-    const ctx = document.getElementById('projectionChart').getContext('2d');
-    const projectionChart = new Chart(ctx, {
+    const ctx = document.getElementById('donorChart').getContext('2d');
+    const donorChart = new Chart(ctx, {
       type: 'line',
       data: {
         labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
         datasets: [
           {
-            label: 'ABBA’s Kingdom - Donors',
-            data: [370000, 800000, 1.3e6, 1.8e6, 2.5e6],
+            label: "ABBA's Kingdom Donation Program",
+            data: [37000, 100000, 300000, 600000, 1000000],
             borderColor: 'rgba(75, 192, 192, 1)',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             fill: true,
+            tension: 0.3,
           },
           {
             label: 'GoFundMe',
-            data: [200000, 500000, 700000, 850000, 1e6],
+            data: [15000, 40000, 70000, 100000, 150000],
             borderColor: 'rgba(255, 99, 132, 1)',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             fill: true,
+            tension: 0.3,
           },
           {
             label: 'Patreon',
-            data: [150000, 350000, 550000, 700000, 800000],
+            data: [20000, 60000, 120000, 200000, 300000],
             borderColor: 'rgba(54, 162, 235, 1)',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             fill: true,
+            tension: 0.3,
           },
           {
             label: 'Tithe.ly',
-            data: [100000, 250000, 400000, 500000, 600
-          {
-            label: 'Tithe.ly',
-            data: [100000, 250000, 400000, 500000, 600000],
+            data: [10000, 30000, 60000, 90000, 150000],
             borderColor: 'rgba(255, 206, 86, 1)',
             backgroundColor: 'rgba(255, 206, 86, 0.2)',
             fill: true,
+            tension: 0.3,
           }
         ]
       },
@@ -214,13 +103,12 @@
         responsive: true,
         plugins: {
           legend: {
-            position: 'top'
+            position: 'top',
           },
           tooltip: {
             callbacks: {
               label: function(context) {
-                let value = context.raw.toLocaleString('en-US');
-                return `${context.dataset.label}: ${value} donors`;
+                return `${context.dataset.label}: ${context.raw.toLocaleString()} donors`;
               }
             }
           }
@@ -239,7 +127,7 @@
             },
             ticks: {
               callback: function(value) {
-                return value.toLocaleString('en-US');
+                return value.toLocaleString();
               }
             }
           }
@@ -249,4 +137,3 @@
   </script>
 </body>
 </html>
-
