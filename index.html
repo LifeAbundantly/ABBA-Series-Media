@@ -1,71 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABBA's Kingdom Donation Program</title>
+    <title>ABBA's Kingdom Program Impact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
-            padding: 20px;
         }
-        h1 {
-            color: #daa520;
+        .header {
+            background-color: #ffd700;
+            padding: 10px;
+            text-align: center;
         }
-        h2, h3 {
-            color: #555;
+        h1, h2 {
+            color: #4e4e4e;
         }
         .section {
-            margin-bottom: 20px;
+            margin: 20px;
         }
-        .highlight {
-            color: #daa520;
-            font-weight: bold;
+        .chart-container {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
         }
-        .chart {
+        footer {
+            background-color: #ffd700;
+            padding: 10px;
             text-align: center;
-            margin: 20px 0;
+            font-size: 14px;
+            color: #fff;
         }
     </style>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>ABBA's Kingdom Donation Program</h1>
-    <p>Welcome to the comprehensive overview of ABBA's Kingdom Donation Program. This program embodies the principles of sowing and reaping, 
-    aiming to revolutionize the landscape of generosity and passive income through Holy Spirit empowerment and the Kingdom of God.</p>
 
-    <div class="section">
-        <h2>Program Goals and Phases</h2>
-        <p><span class="highlight">Phase 1:</span> Target of <strong>1,000 donations</strong> in the first 30 days at a 95% probability of success.</p>
-        <p><span class="highlight">Phase 2:</span> Scaling to <strong>10,000 donations</strong> within six months, with a 90% probability based on expanded marketing and community engagement.</p>
-        <p><span class="highlight">Phase 3:</span> Growing to <strong>75,000 donations</strong> within 18 months at an 87% probability, supported by advanced analytics, social media integration, and testimonials.</p>
-        <p><span class="highlight">Phase 4:</span> Achieving a minimum of <strong>1.7 million donations</strong> (17% penetration across demographics) within three years, with an 85% probability based on projected demographic growth and program adaptability.</p>
+    <div class="header">
+        <h1>ABBA's Kingdom Program</h1>
+        <h2>Revolutionizing the Kingdom with Holy Spirit Empowered Generosity</h2>
     </div>
 
     <div class="section">
-        <h2>Projected Impact</h2>
-        <p>The program aims to impact <strong>affiliate markets, online income demographics, side hustles, and the 13-18 year-old demographic</strong>, creating a blue ocean market of revolutionary generosity.</p>
-        <p>Phase 4 is expected to generate ripple effects as donors become affiliate partners, expanding the program's reach exponentially.</p>
+        <h2>Projected Growth and Impact</h2>
+        <p>This program is powered by the Holy Spirit to reach the world and make a significant impact across all demographics. Below is the projected growth and its effect:</p>
+        <div class="chart-container">
+            <canvas id="growthChart"></canvas>
+        </div>
     </div>
 
-    <div class="section chart">
-        <h2>Timeline Goals & Projections</h2>
-        <img src="ABBA_Kingdom_Graph_Timeline_Projections.png" alt="Timeline Goals & Projections" width="800">
-        <p>This chart showcases the growth trajectory of donations, probabilities of success, and penetration rates across all phases.</p>
-    </div>
+    <footer>
+        <p>Empowering the Kingdom, Transforming Lives with the Message of Jesus</p>
+    </footer>
 
-    <div class="section">
-        <h2>Continuous Adaptation</h2>
-        <p>ABBA's Kingdom Donation Program will be updated continuously based on market data, user feedback, and Holy Spirit-led direction to maintain high performance, 
-        maximize impact, and ensure sustainability as competition arises.</p>
-    </div>
+    <script>
+        // Set up the data for the chart
+        const data = {
+            labels: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
+            datasets: [{
+                label: 'Projected Impact by Phase (%)',
+                data: [5, 15, 50, 85], // Placeholder data for phases (adjust based on your data)
+                backgroundColor: ['#4caf50', '#ff9800', '#2196f3', '#f44336'],
+                borderColor: ['#4caf50', '#ff9800', '#2196f3', '#f44336'],
+                borderWidth: 1
+            }]
+        };
 
-    <div class="section">
-        <h2>Join the Mission</h2>
-        <p>Through your support, we are co-laboring with ABBA to bring Kingdom generosity and abundant life to all. Let's expand the Kingdom of God and make an eternal impact together!</p>
-    </div>
+        // Set up the chart options
+        const options = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    enabled: true
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        max: 100,
+                        stepSize: 10
+                    }
+                }
+            }
+        };
+
+        // Create the chart
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        const growthChart = new Chart(ctx, {
+            type: 'bar', // Bar chart type
+            data: data,
+            options: options
+        });
+    </script>
 </body>
 </html>
